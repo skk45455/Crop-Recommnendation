@@ -108,8 +108,8 @@ st.title("🌾 Smart Crop Recommendation")
 
 # Load model
 model = load_model()
-if model is None:
-    st.error("Model not found! Using rule-based system.")
+#if model is None:
+    #st.error("Model not found! Using rule-based system.")
 
 # Input form
 col1, col2 = st.columns(2)
@@ -280,3 +280,4 @@ crop_descriptions = {
     'Chickpea': '🧅 Needs: Cool, dry winter crop'
 
 }
+
