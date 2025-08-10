@@ -178,8 +178,7 @@ if st.button("🔮 Predict Crop", type="primary"):
         """, unsafe_allow_html=True)
         
         # Show crop description
-        if crop in crop_descriptions:
-            st.info(f"**{crop_descriptions[crop]}**")
+        
         
         st.success(f"**Method Used:** {method}")
         
@@ -279,4 +278,5 @@ crop_descriptions = {
     'Coconut': '🥥 Needs: Coastal, high humidity',
     'Mango': '🥭 Needs: Tropical, distinct seasons',
     'Chickpea': '🧅 Needs: Cool, dry winter crop'
+
 }
