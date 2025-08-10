@@ -11,8 +11,10 @@ def load_model():
     try:
         with open('model.pkl', 'rb') as f:
             model = pickle.load(f)
+        st.success("✅ Model loaded successfully!")
         return model
-    except:
+    except Exception as e:
+        st.error(f"❌ Model loading failed: {str(e)}")
         return None
 
 # Crop mapping
@@ -280,4 +282,5 @@ crop_descriptions = {
     'Chickpea': '🧅 Needs: Cool, dry winter crop'
 
 }
+
 
