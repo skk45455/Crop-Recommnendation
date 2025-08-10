@@ -14,7 +14,7 @@ def load_model():
         st.success("✅ Model loaded successfully!")
         return model
     except Exception as e:
-        st.error(f"❌ Model loading failed: {str(e)}")
+        #st.error(f"❌ Model loading failed: {str(e)}")
         return None
 
 # Crop mapping
@@ -282,5 +282,6 @@ crop_descriptions = {
     'Chickpea': '🧅 Needs: Cool, dry winter crop'
 
 }
+
 
 
