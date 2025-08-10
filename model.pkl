@@ -1,10 +1,1 @@
-@st.cache_resource
-def load_model():
-    try:
-        with open('model.pkl', 'rb') as f:
-            model = pickle.load(f)
-        st.success("✅ Model loaded successfully!")
-        return model
-    except Exception as e:
-        st.error(f"❌ Model loading failed: {str(e)}")
-        return None
+
